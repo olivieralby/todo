@@ -1,0 +1,114 @@
+body{
+    font-family: 'Source Sans Pro ',sans-serif;
+}
+.contain{
+    display: flex;
+}
+.main{
+    background-color: #F0F0F7;
+    padding-left: 75px;
+    padding-right: 95px;
+    width: 1340px;
+    margin-top: 70px;
+    
+}
+.main h1{
+    font-weight: 200;
+    font-size:28px;
+}
+
+
+.cbody_header{
+   height: 95px;
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.cbody_header div.form_search{
+    display: flex;
+    width: 250px;
+    margin-left: 48px;
+}
+.cbody_header input{
+    border:none;
+    height: 18px;
+    width: 215px;
+    font-size:13px;
+}
+.cbody_header button.search span{
+    display: block;
+    font-size:14px;
+}
+.cbody_header button.search{
+    height: 18px;
+    width: 18px;
+    border:none;
+
+}
+.cbody_header .action{
+    float:right;
+    display: flex;
+   
+    margin-right: 50px;
+}
+.action button{
+    height: 32px;
+    width:85px;
+    font-size:13px;
+
+}
+.action button{
+    border:1px solid rgba(128, 128, 128, 0.5);
+}
+table{
+    background-color: #fff;
+}
+table tr:nth-child(1){
+    font-size:11px;
+}
+table tr{
+    font-size:13px;
+}
+td button{
+    border:none;
+    background-color: transparent;
+}
+.widget{
+    width: 260px;
+    background-color: #43425D;
+    height: 100vh;
+}
+
+.widget h1{
+    height: 70px;
+    background-color: #313146;
+    font-size:15px;
+    color:white;
+    padding: 26px 187px 23px 20px;
+}
+.popup{
+    position: absolute;
+    height:300;
+    width: 580px;
+    padding: 16px;
+    box-shadow: 0 0 5px black;
+    font-size: 13px;
+}
+.popup input,.popup textarea{
+    border:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.459);
+    width: 400px;
+    outline:none;
+}
+input[type=reset]{
+    width: 80px;
+    border:none;
+}
+.popup textarea{
+    resize:none;
+}
+.radio input{
+    width: 35px;
+    
+}
