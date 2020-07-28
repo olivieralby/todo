@@ -16,7 +16,6 @@ export default class Update extends React.Component{
 
     handleSubmit=(e)=>{
         e.preventDefault();
-         this.props.onClick();
         this.props.onSubmit({
              id:this.state.id,
               title:this.state.title,
@@ -31,9 +30,14 @@ export default class Update extends React.Component{
             [e.target.name]:e.target.value
         })
     }
+    onDelet=(id)=>{
+        this.props.onClick({id:this.state.id});
+    }
 
     render(){
-        return <form className="popup"  onSubmit={()=>this.handleSubmit()}>
+        return <div>
+            <button className="bt- btn-danger float-right" onClick={this.onDelet}>supprimer</button>
+            <form className="popup"  onSubmit={()=>this.handleSubmit()}>
             <h5>Edit To do</h5>
             <div>
                 <input type="text" name="title"  placeholder={this.props.title} onChange={this.handleChange} />
@@ -51,5 +55,6 @@ export default class Update extends React.Component{
             <input type="reset" className="btn btn-dark float-left" value="Cancel"/>
             <button className="btn btn-primary float-right" onClick={this.handleSubmit}>Editer</button>
         </form>
+        </div>
     }
 }

@@ -26,17 +26,16 @@ export default class TodoTr extends React.Component {
         
 
         render(){ 
-        return <tr id={this.props.id} onClick={this.onUpdate}>
+        return <tr id={this.props.id}  onClick={this.onUpdate}>
             <td>{this.props.id} </td>
             <td >{this.props.title}</td>
             <td>{this.props.description} </td>
             <td>{this.props.status}</td>
             <td>
                 <button onClick={()=>this.onDelete(this.props.id)}>
-                    <span className="material-icons"  >
-                    delete
-                    </span>
+                    
                 </button>
+                
                 
             </td>
         </tr>

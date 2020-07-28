@@ -47,11 +47,8 @@ export default class AddTodo extends React.Component{
              </div>
              <div className="radio mb-5">
                 <input type="radio" value="todo" onChange={this.handleChange}  name="status"/>To do
-                    {/* <label>To do</label> */}
                 <input type="radio" value="inprogress" onChange={this.handleChange}  name="status"   />In Progress
-                    {/* <label className="form-check-label">In Progress</label> */}
                 <input type="radio" value="done" onChange={this.handleChange}  name="status"/>Done
-                    {/* <label className="form-check-label">In Progress</label> */}
              </div>
 
                     

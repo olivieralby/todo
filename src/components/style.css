@@ -112,3 +112,12 @@ input[type=reset]{
     width: 35px;
     
 }
+td{
+    position: relative;
+}
+.deleteSpan{
+    position: absolute;
+    cursor:pointer;
+    top:32px;
+    left:-32px;
+}
